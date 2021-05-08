@@ -1,0 +1,77 @@
+body {
+    font-size: 16px;
+}
+
+.list-horizontal .list-item {
+    display: inline-block;
+}
+
+.site-nav {
+    background-color: rgb(248, 249, 250);
+}
+
+.site-nav .list-item {
+    padding: 15px 5px;
+}
+
+.site-nav .list-item:first-of-type {
+    margin-left:10px;
+}
+
+.banner {
+
+    background-image: url("/static/pet.png");
+    background-repeat: no-repeat;
+    background-color: #e9ecef;
+    background-size: contain;
+    background-position: right;
+    height: 100px;
+    width: 1046px;
+    padding-top: 300px;
+    text-align: center;
+
+}
+
+.button {
+    display: inline-block;
+    padding: 5px 15px;
+    border-style: none;
+    border-radius: 3px;
+
+    font-size: 16px;
+    color:#fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.button:hover{
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+    cursor: pointer;
+}
+
+.button.button-blue{
+    background-color: dodgerblue;
+}
+
+#root{
+    width:1046px;
+    margin:0 auto;
+}
+
+.pet-buttons{
+    padding-top: 10px;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+img {
+    width: 300px;
+     height: 300px;
+     background-position: 50% 50%;
+     background-repeat: no-repeat;
+     background-size: contain;
+}
