@@ -3,6 +3,7 @@
 # Create your views here.
 from django.shortcuts import render, redirect
 
+from pets.forms.comment_form import CommentForms
 from pets.models import Pet, Like
 
 
@@ -11,7 +12,7 @@ def list_pets(request):
         'pets': Pet.objects.all(),
     }
 
-    return render(request, 'pets/pets_list.html', context)
+    return render(request, 'pet_list.html', context)
 
 
 def show_pet_details(request, pk):
@@ -19,9 +20,10 @@ def show_pet_details(request, pk):
     pet.likes_count = pet.like_set.count()
     context = {
         'pet': pet,
+        'form': CommentForms(),
     }
 
-    return render(request, 'pets/pets_details.html', context)
+    return render(request, 'pet_detail.html', context)
 
 
 def like_pet(request, pk):
