@@ -42,11 +42,11 @@ def like_pet(request, pk):
     like = Like(test=str(pk))
     like.pet = pet
     like.save()
-    return redirect('pet details', pk)
+    return redirect('pet details or comment', pk)
 
 
-def edit_pet(request, pk):
-    pet = Pet.objects.get(pk=pk)
+def persist_pet(request,pet,template_name):
+
     if request.method == "GET":
         form = PetForm(instance=pet)
 
@@ -55,7 +55,7 @@ def edit_pet(request, pk):
             'pet': pet,
         }
 
-        return render(request, 'pet_edit.html', context)
+        return render(request, f'{template_name}.html', context)
     else:
         form = PetForm(
             request.POST,
@@ -64,16 +64,22 @@ def edit_pet(request, pk):
         if form.is_valid():
             form.save()
             return redirect('pet details or comment', pet.pk)
-        
+
         context = {
             'form': form,
             'pet': pet,
         }
-        return render(request, 'pet_edit.html', context)
+        return render(request, f'{template_name}.html', context)
+
+
+
+
+def edit_pet(request, pk):
+    pet = Pet.objects.get(pk=pk)
+    return persist_pet(request, pet, 'pet_edit')
 
 
 def delete_pet(request, pk):
-
     pet = Pet.objects.get(pk=pk)
     if request.method == 'GET':
         context = {
@@ -83,3 +89,8 @@ def delete_pet(request, pk):
     else:
         pet.delete()
         return redirect('list pets')
+
+
+def create_pet(request):
+    pet = Pet()
+    return persist_pet(request, pet, 'pet_create')
