@@ -22,7 +22,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ExpensesTrackerApp/ExpensesTrackerDjango" />
   </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Python.DjangoServer" factoryName="Django server" nameIsGenerated="true">
@@ -61,6 +61,7 @@
       <workItem from="1620826600330" duration="15000" />
       <workItem from="1620826822816" duration="68000" />
       <workItem from="1621604071158" duration="6788000" />
+      <workItem from="1624384207110" duration="904000" />
     </task>
     <servers />
   </component>
