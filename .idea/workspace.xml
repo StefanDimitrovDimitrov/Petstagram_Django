@@ -22,7 +22,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ExpensesTrackerApp/ExpensesTrackerDjango" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Python.DjangoServer" factoryName="Django server" nameIsGenerated="true">
@@ -62,6 +63,13 @@
       <workItem from="1620826822816" duration="68000" />
       <workItem from="1621604071158" duration="6788000" />
       <workItem from="1624384207110" duration="904000" />
+      <workItem from="1624425336831" duration="143000" />
+      <workItem from="1624794577499" duration="48000" />
+      <workItem from="1624799525121" duration="1271000" />
+      <workItem from="1625415697239" duration="26000" />
+      <workItem from="1625990741853" duration="1578000" />
+      <workItem from="1626168841664" duration="525000" />
+      <workItem from="1626204240513" duration="2474000" />
     </task>
     <servers />
   </component>
